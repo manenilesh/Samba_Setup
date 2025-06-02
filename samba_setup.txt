@@ -1,0 +1,25 @@
+sudo apt update
+sudo apt install samba
+mkdir share
+ls
+cd share
+pwd
+
+sudo nano /etc/samba/smb.conf 
+
+--> Bottom <--
+[share]
+        comment = Samba_server
+        path = /home/itadmin/share
+        read only = no
+        browsable = yes
+        
+        
+sudo service smbd start 
+sudo smbpasswd -a itadmin
+--> Set New Password
+
+
+
+
+mediator between two operating system like 

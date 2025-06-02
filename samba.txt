@@ -1,0 +1,29 @@
+crontab -l
+  711  crontab -e
+  712  cd
+  713  sudo nano /etc/samba/smb.conf 
+  714  sudo mkdir -p /srv/samba/share
+  715  sudo chmod -R 0775 /srv/samba/share/
+  716  ls -la /srv/samba/share/
+  717  ls -la /srv/samba/
+  718  sudo smbpasswd -a itadmin
+  719  sudo  chown -R itadmin:itadmin /srv/samba/share/
+  720  ls -la /srv/samba/share/
+  721  ls -la /srv/samba/
+  722  sudo systemctl restart smbd.service 
+  723  sudo systemctl status  smbd.service 
+  724  sudo ufw status 
+  725  sudo ufw app list 
+  726  sudo ufw allow Samba
+  727  sudo ufw app list 
+  728  sudo ufw status 
+  729  cd /srv/samba/share/
+  730  pwd
+  731  sudo nano /etc/samba/smb.conf 
+  732  ls
+  733  ls -ltr
+  734  sudo nano /etc/samba/smb.conf 
+  735  sudo systemctl restart smbd.service 
+  736  sudo nano /etc/samba/smb.conf 
+  737  history
+
